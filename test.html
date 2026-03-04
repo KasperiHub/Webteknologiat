@@ -9,19 +9,44 @@
 </head>
 
 <body>
-    <h1>Hello World!!!</h1>
-    <p>Sisältö voidaan laittaa p tagin sisään kappaleeksi.</p>
-    <p>Voimme myös laittaa linkkejä, kuten <a href="https://www.google.com">Google</a>.</p>
-    <p>Voimme myös laittaa kuvia, kuten alla oleva kuva.</p>
-    <img src="kissa.jpg" alt="Kuva ei saatavilla" height="100" width="100">
-    <p>Voimme myös laittaa listoja, kuten alla oleva lista.</p>
+    <h1>HTML tehtävä</h1>
+    <p>Olen käynyt ohjelmointi kursseja.</p>
+    <p>Esimerkiksi tälläinen kurssi matiikasta <a
+            href="https://lab.fi/fi/uutiset/matematiikan-perusteet-haltuun-verkkokurssin-avulla"
+            target="_blank">Matikka</a>.</p>
+    <p>Asiantuntijan viestintätaidoista latasin tälläisen kuvan.</p>
+    <img src="kuvat/kissa.jpg" alt="Kuva ei saatavilla" height="100" width="100">
+    <p>Tässä lista kursseista ja gifi liittyne kurssiin.</p>
     <ul>
-        <li>Ensimmäinen kohta</li>
-        <li>Toinen kohta</li>
-        <li>Kolmas kohta</li>
-        <a href="https://www.w3schools.com/html/html_lists.asp"><img src="kissa.jpg" alt="Kuva ei saatavilla"
-                height="100" width="100"></a>
+        <li>SQL kurssi</li>
+        <li>Työvälineosaaminen</li>
+        <li>Taloushallinto</li>
+        <a href="https://www.w3schools.com/html/html_lists.asp"></a><img
+            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd25tN2V2cGx5NjdjeTZhYmpuZHJtemtiOGFkcGg4a2gxa3ZsZnlnNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/In0Lpu4FVivjISX9HT/giphy.gif"
+            alt="Kissa gifi" height="100" width="100">
+    </ul>
 
+    <div><i>Kurssi</i></div>
+    <br>
+    <span><b>Kurssi</b></span>
+    <br>
+
+    <table style="text-align:center;">
+        <tr>
+            <th>Mielipiteeni Ohjelmoinnista<br> <img
+                    src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWwxOWxtOWRyN3gzcXl1eWNjMGpkcTJjOGx5c2FoNmF5NDYzYnptOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WUOfVOzkI18GNBNLxQ/giphy.gif"
+                    height="100" width="100"> </th>
+            <th>Mielipiteeni Matematiikasta<br> <img
+                    src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXA0YmhmNWo5b2M3NG15c2xqNnIwejgybHh6d3NydXpvZDdwbGJzMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/F9Hijg8bzpR4nAcE2q/giphy.gif"
+                    height="100" width="100"> </th>
+            <th>Mielipiteeni Taloushallinnosta<br> <img
+                    src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaThvYmExamk5cWkxNTc4NTI1OHNnYW94ZHVsaWxwb2N6cXBkOGQ4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ip1WNoJja858PB4bcO/giphy.gif"
+                    height="100" width="100"> </th>
+        </tr>
+    </table>
+    <button onclick="document.getElementById('sound').play()" style="width: 200px; height: 80px; font-size: 20px;">
+        Kun pitäisi herätä 8:00</button>
+    <audio id="sound" src="user.mp3" type="audio/mpeg"></audio>
 </body>
 
 </html>
