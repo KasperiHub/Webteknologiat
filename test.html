@@ -9,7 +9,14 @@
 </head>
 
 <body>
-    <h1>HTML tehtävä</h1>
+    <h1>HTML tehtävä.
+        <style>
+            h1 {
+                color: blue;
+            }
+        </style>
+    </h1>
+
     <p>Olen käynyt ohjelmointi kursseja.</p>
     <p>Esimerkiksi tälläinen kurssi matiikasta <a
             href="https://lab.fi/fi/uutiset/matematiikan-perusteet-haltuun-verkkokurssin-avulla"
@@ -18,9 +25,9 @@
     <img src="kuvat/kissa.jpg" alt="Kuva ei saatavilla" height="100" width="100">
     <p>Tässä lista kursseista ja gifi liittyne kurssiin.</p>
     <ul>
-        <li>SQL kurssi</li>
-        <li>Työvälineosaaminen</li>
-        <li>Taloushallinto</li>
+        <li><i>SQL kurssi 5 op</i></li>
+        <li><b>Työvälineosaaminen 5 op</b></li>
+        <li>Taloushallinto 5 op</li>
         <a href="https://www.w3schools.com/html/html_lists.asp"></a><img
             src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd25tN2V2cGx5NjdjeTZhYmpuZHJtemtiOGFkcGg4a2gxa3ZsZnlnNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/In0Lpu4FVivjISX9HT/giphy.gif"
             alt="Kissa gifi" height="100" width="100">
@@ -28,8 +35,9 @@
 
     <div><i>Kurssi</i></div>
     <br>
-    <span><b>Kurssi</b></span>
-    <br>
+    <span><b>Kurssi</b></span> <br>
+
+
 
     <table style="text-align:center;">
         <tr>
@@ -46,7 +54,7 @@
     </table>
     <button onclick="document.getElementById('sound').play()" style="width: 200px; height: 80px; font-size: 20px;">
         Kun pitäisi herätä 8:00</button>
-    <audio id="sound" src="user.mp3" type="audio/mpeg"></audio>
+    <audio id="sound" src="aanet/snore.mp3" type="audio/mpeg"></audio>
 </body>
 
 </html>
