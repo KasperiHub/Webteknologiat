@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toinen tehtävä</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="fname">Etunimi:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="lname">Sukunimi:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <label for="sposti">Sähköposti:</label><br>
+            <input type="email" id="sposti" name="tEmail"><br><br>
+
+            <label for="tphone">Puhelin:</label><br>
+            <input type="tel" id="tphone" name="tPhone"><br><br>
+
+            <p>Yhteydenottotapa:</p>
+            <input type="checkbox" id="email1" name="contact[]" value="Email">
+            <label for="email1">Email</label><br>
+
+            <input type="checkbox" id="phone1" name="contact[]" value="Telephone">
+            <label for="phone1">Telephone</label><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Feedback</legend>
+
+            <label for="subject">Aihe:</label><br>
+            <input type="text" id="subject" name="subject"><br><br>
+
+            <label for="message">Viesti:</label><br>
+            <textarea id="message" name="message" rows="6" cols="40"></textarea><br><br>
+
+            <label for="file">Liitetiedosto:</label><br>
+            <input type="file" id="file" name="file"><br><br>
+
+            <button type="submit">Lähetä</button>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
