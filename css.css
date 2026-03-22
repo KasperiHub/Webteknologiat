@@ -1,0 +1,33 @@
+        .contact-info {
+            display: grid;
+            grid-template-columns: 200px 200px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: darkgray;
+            color: chocolate;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            margin: 0;
+            margin-bottom: -12px;
+            box-sizing: border-box;
+            width: 450px;
+            background-color: white;
+        }
+
+        fieldset:first-of-type {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
