@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-perusteet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: darkgray;
+            color: brown;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            background-color: white;
+            color: black;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        legend {
+            color: brown;
+            font-weight: bold;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-left: 4px solid brown;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+            padding: 8px;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        .vinkki {
+            background-color: #fff8f0;
+            border: 2px solid brown;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .navbar {
+            background-color: gray;
+            border-bottom: 3px solid brown;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: brown !important;
+        }
+
+        a {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">HTML-kurssi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#rakenne">Rakenne</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tagit">Tagit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#asettelu">Asettelu</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://kasperihub.github.io/Webteknologiat/test.html">Tehtävä 1</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://kasperihub.github.io/Webteknologiat/lomake.html">Tehtävä 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+
+        <h1 class="text-center" style="color: blue;">HTML-perusteet</h1>
+        <p class="text-center">Sivun rakenne, tagit, CSS ja Bootstrap.</p>
+
+        <!-- RAKENNE -->
+        <fieldset id="rakenne">
+            <legend>1. Sivun perusrakenne</legend>
+            <p>Jokainen HTML-sivu alkaa samalla rakenteella:</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fi"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Otsikko&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Tervetuloa!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+            <div class="vinkki">
+                <b>Muista:</b> Elementti = aloitustagi + sisältö + lopetustagi, esim. &lt;p&gt;teksti&lt;/p&gt;.<br>
+                Poikkeus: &lt;br&gt; ja &lt;img&gt; ovat itsesulkeutuvia — ei lopetustageja.
+            </div>
+        </fieldset>
+
+        <!-- TAGIT -->
+        <fieldset id="tagit">
+            <legend>2. Tärkeimmät HTML-tagit</legend>
+            <table>
+                <tr>
+                    <th>Tagi</th>
+                    <th>Kuvaus</th>
+                    <th>Esimerkki</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;html&gt;</code></td>
+                    <td>Sivun juurielementti</td>
+                    <td>
+                        <pre>&lt;html lang="fi"&gt;...&lt;/html&gt;</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>&lt;head&gt;</code></td>
+                    <td>Metatiedot, ei näy sivulla</td>
+                    <td>
+                        <pre>&lt;head&gt;&lt;title&gt;Sivu&lt;/title&gt;&lt;/head&gt;</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>&lt;body&gt;</code></td>
+                    <td>Kaikki näkyvä sisältö</td>
+                    <td>
+                        <pre>&lt;body&gt;Sisältö tähän&lt;/body&gt;</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>&lt;h1&gt;–&lt;h6&gt;</code></td>
+                    <td>Otsikot, h1 suurin</td>
+                    <td>
+                        <pre>&lt;h1&gt;Pääotsikko&lt;/h1&gt;</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>&lt;p&gt;</code></td>
+                    <td>Tekstikappale</td>
+                    <td>
+                        <pre>&lt;p&gt;Tässä tekstiä.&lt;/p&gt;</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>&lt;a&gt;</code></td>
+                    <td>Linkki</td>
+                    <td>
+                        <pre>&lt;a href="https://..." target="_blank"&gt;Linkki&lt;/a&gt;</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>&lt;img&gt;</code></td>
+                    <td>Kuva (itsesulkeutuva)</td>
+                    <td>
+                        <pre>&lt;img src="kuva.jpg" alt="Kuvaus" width="100"&gt;</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>&lt;br&gt;</code></td>
+                    <td>Rivinvaihto</td>
+                    <td>
+                        <pre>Rivi 1.&lt;br&gt;Rivi 2.</pre>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- CSS -->
+        <fieldset id="css">
+            <legend>3. CSS-muotoilu</legend>
+            <p>CSS määrittää miltä elementit näyttävät. Rakenne: <b>selektori { ominaisuus: arvo; }</b></p>
+            <p>CSS lisätään kolmella tavalla: ulkoisena tiedostona (paras), &lt;style&gt;-lohkona tai inline-tyyleinä
+                (vältä).</p>
+            <pre>
+/* Elementtiselektori */
+h1 { color: blue; text-align: center; }
+
+/* Luokkaselektori */
+.korostettu { background-color: yellow; }
+
+/* ID-selektori */
+#paaOtsikko { font-size: 2rem; }</pre>
+            <p>Linkitys &lt;head&gt;-osiossa:</p>
+            <pre>&lt;link rel="stylesheet" href="tyyli.css"&gt;</pre>
+        </fieldset>
+
+        <!-- BOOTSTRAP -->
+        <fieldset id="bootstrap">
+            <legend>4. Bootstrap-kirjasto</legend>
+            <p>Bootstrap antaa valmiit tyylit komponenteille. Lisätään &lt;head&gt;-osioon:</p>
+            <pre>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</pre>
+            <p>Bootstrap toimii lisäämällä valmiita luokkia elementeille:</p>
+            <pre>
+&lt;button class="btn btn-primary"&gt;Nappula&lt;/button&gt;
+
+&lt;div class="card" style="width: 200px;"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Otsikko&lt;/h5&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Lue lisää&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <p><b>Esimerkki:</b></p>
+            <div class="card d-inline-block me-2" style="width: 180px;">
+                <div class="card-body">
+                    <h5 class="card-title">Kortti</h5>
+                    <a href="#" class="btn btn-primary btn-sm">Lue lisää</a>
+                </div>
+            </div>
+            <button class="btn btn-success btn-sm">Onnistui</button>
+            <button class="btn btn-danger btn-sm ms-1">Virhe</button>
+        </fieldset>
+
+        <!-- ASETTELU -->
+        <fieldset id="asettelu">
+            <legend>5. Asettelu — Flex, Grid ja Bootstrap</legend>
+            <p><b>CSS Flexbox</b> (käytetty tehtävässä 2):</p>
+            <pre>
+.sailio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}</pre>
+            <p><b>CSS Grid</b> (käytetty tehtävässä 2 .contact-info:ssa):</p>
+            <pre>
+.contact-info {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}</pre>
+            <p><b>Bootstrap Grid</b> — 12-sarakeinen ruudukko:</p>
+            <pre>
+&lt;div class="row"&gt;
+  &lt;div class="col-md-6"&gt;Vasen puoli&lt;/div&gt;
+  &lt;div class="col-md-6"&gt;Oikea puoli&lt;/div&gt;
+&lt;/div&gt;</pre>
+            <div class="vinkki">
+                <b>Responsiivisuus:</b> Lisää &lt;meta name="viewport" content="width=device-width,
+                initial-scale=1.0"&gt;
+                &lt;head&gt;-osioon — muuten sivu ei skaalaudu oikein puhelimella!
+            </div>
+        </fieldset>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
