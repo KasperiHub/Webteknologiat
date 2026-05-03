@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+.sisalto {
+    background-color: beige;
+    color: black;
+    padding: 20px;
+    width: 600px;
+}
+
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: brown;
+    font-size: 18px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.laskuri {
+    margin-top: 12px;
+    font-size: 14px;
+    color: gray;
+}
+
+.laskuri span {
+    font-weight: bold;
+    color: brown;
+}
+
+.spinner-kehys {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.spinner-teksti {
+    font-size: 14px;
+    color: gray;
+}
+
+.accordion-button {
+    background-color: #f5f0e8;
+    color: brown;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: brown;
+    color: white;
+}
+
+.accordion-body {
+    font-size: 14px;
+    background-color: white;
+}
