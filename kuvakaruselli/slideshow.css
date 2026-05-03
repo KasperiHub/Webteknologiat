@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+.sisalto {
+    background-color: beige;
+    color: black;
+    padding: 20px;
+    width: 540px;
+}
+
+h1 {
+    color: brown;
+}
+
+.media-elementti {
+    border: 2px solid brown;
+    padding: 10px;
+    background-color: white;
+    width: 520px;
+}
+
+.media-elementti img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.teksti-alue {
+    padding: 10px 5px 5px 5px;
+}
+
+.teksti-alue h2 {
+    color: brown;
+    margin: 5px 0;
+}
+
+.teksti-alue p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+#paivamaara {
+    color: gray;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.napit {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
+
+.napit button {
+    background-color: blue;
+    color: white;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.napit button:hover {
+    background-color: darkblue;
+}
+
+.indeksi-info {
+    font-size: 13px;
+    color: gray;
+    margin-top: 8px;
+}

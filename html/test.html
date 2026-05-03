@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fi">
-<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="css/css.css">
 
 
 
@@ -57,3 +57,16 @@
 </body>
 
 </html>
+}
+function laskeHinta() {
+const koko = parseInt(document.getElementById("koko").value);
+const tayteBoxit = document.querySelectorAll('input[type="checkbox"]');
+let taytteet = 0;
+tayteBoxit.forEach(cb => {
+if (cb.checked) {
+taytteet = taytteet + 2;
+}
+});
+const yhteensa = koko + taytteet;
+document.getElementById("hinta").textContent = yhteensa;
+}

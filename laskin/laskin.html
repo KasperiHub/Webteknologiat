@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+<link rel="stylesheet" href="laskin.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="laskin.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laskin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sisalto">
+        <h1>Laskin</h1>
+
+        <div class="laskurivi">
+            <div class="luku-kentta">
+                <label for="luku1">Luku 1:</label><br>
+                <button onclick="Vahenna(1)">[-]</button>
+                <input type="text" id="luku1" min="1" max="10" size="4" readonly>
+                <button onclick="Lisaa(1)">[+]</button>
+            </div>
+
+            <div class="operaattori">
+                <label for="operaattori">Operaattori:</label><br>
+                <select id="operaattori">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+
+            <div class="luku-kentta">
+                <label for="luku2">Luku 2:</label><br>
+                <button onclick="Vahenna(2)">[-]</button>
+                <input type="text" id="luku2" min="1" max="10" size="4" readonly>
+                <button onclick="Lisaa(2)">[+]</button>
+            </div>
+        </div>
+
+        <br>
+        <button class="laske-nappi" onclick="Laske()">Laske</button>
+
+        <h2>Tulos: <span id="tulos">-</span></h2>
+    </div>
+
+    <div id="virheDialog" title="Virhe"></div>
+</body>
+
+</html>

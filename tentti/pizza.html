@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+<link rel="stylesheet" href="cs.css">
+<script src="js.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Tilaus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <form id="tilausForm">
+        <fieldset>
+            <legend></legend>
+            <div class="pizzakuva">
+                <img src="pizza.jpg" alt="Kuva ei saatavilla" width="300px" height="300px">
+                <a>Pizzan lisätiedot</a>
+                <div class="icon">❓</div>
+                <div class="info">Pizza Pizza Pizza.</div>
+            </div>
+
+            <div class="sisalto">
+                <h1>Tilaa Pizza</h1>
+                <label for="koko">Koko:</label><br>
+                <select id="koko" onchange="Hinta()">
+                    <option value="6">Tavallinen 6 €</option>
+                    <option value="12">Perhe 12 €</option>
+                </select>
+                <h1>Täytteet (2 € / kpl)</h1>
+                <label><input type="checkbox" id="quantityAnanas" onchange="Hinta()"> Ananas</label><br>
+                <label><input type="checkbox" id="quantityAurajuusto" onchange="Hinta()"> Aurajuusto</label><br>
+                <label><input type="checkbox" id="quantityKinkku" onchange="Hinta()"> Kinkku</label><br>
+                <label><input type="checkbox" id="quantityPepperoni" onchange="Hinta()"> Pepperoni</label><br>
+                <label><input type="checkbox" id="quantityTonnikala" onchange="Hinta()"> Tonnikala</label><br><br>
+                <h1>Hinta yhteensä: <span id="orderTotal">6</span> €</h1><br>
+                <button type="submit" style="width: 250px; background-color: blue; color: white;">Tilaa</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

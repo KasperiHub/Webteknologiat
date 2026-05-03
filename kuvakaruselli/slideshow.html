@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fi">
+<link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="slideshow.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Koirarodut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sisalto">
+        <h1>Koirarodut</h1>
+
+        <div id="media" class="media-elementti">
+            <img id="kuva" src="" alt="Kuva ei saatavilla" width="500" height="300">
+            <div class="teksti-alue">
+                <h2 id="otsikko"></h2>
+                <p id="paivamaara"></p>
+                <p id="sisalto"></p>
+            </div>
+        </div>
+
+        <div class="napit">
+            <button onclick="Edellinen()">&#9664; Edellinen</button>
+            <button id="playNappi" onclick="TogglePlay()">&#9646;&#9646; Pysäytä</button>
+            <button onclick="Seuraava()">Seuraava &#9654;</button>
+        </div>
+
+        <p class="indeksi-info">Näytetään: <span id="indeksiNaytto"></span></p>
+    </div>
+</body>
+
+</html>
